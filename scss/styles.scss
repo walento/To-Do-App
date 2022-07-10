@@ -1,0 +1,42 @@
+@use "config" as *;
+@forward "items";
+
+.todo{
+    background: $primary-color;
+    color: $secondary-color;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    &__form{
+        margin-bottom: 2rem;
+    }
+
+    &__heading{
+        font-size: 1rem;
+        margin: 2rem 0;
+    }
+
+    &__input, &__button{
+        padding: .5rem 1rem;
+        font-size: 1rem;
+        border: none;
+        background: $tertiary-color;
+        color: $secondary-color;
+    }
+
+    &__button{
+        background: $quaternary-color;
+        color: #015d9e;
+        cursor: pointer;
+        transition: all 1s ease;
+
+        &:hover{
+            background: #015d9e;
+            color: $quaternary-color;
+        }
+    }
+}
+
